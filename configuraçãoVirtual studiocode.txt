@@ -1,0 +1,9 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Dracula",
+    "editor.cursorStyle": "line-thin",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.lineHeight": 30,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "vsicons.projectDetection.autoReload": true,
+    }
