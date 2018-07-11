@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title></title>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-form">
+
+</div>
+
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- teste -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <c:import url="../referencias.jsp"/> 
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Cadastro de Apresentação</title>
+        
+   
+        
+    </head>
+<h5 align="center">${versao}</h5>
+    <body style="background: ${cormeio}">
+        <form id="formApresentacao" name="formApresentacao" method="post" action="">           
+            <div class="container-fluid">
+                <div class="flex-align" style="background: ${cortop}; ">
+                    <div class="container span7 text-center col-md-10 col-md-offset-3" style="margin: 0 auto;float: none;">
+                        <div class="row">
+                            <input name="b_novo" type="button" class="btn btn-default" id="b_novo" value="Novo" onclick="Clik(2)"/>
+                            <input name="b_salvar" type="button" class="btn btn-default" id="b_salvar" value="Salvar" onclick="Clik(3)"/>
+                            <input name="b_excluir" type="button" class="btn btn-default" id="b_excluir" value="Excluir" onclick="Clik(4)"/>
+                            <input name="tipo" type="hidden" id="tipo" value="0" />
+                            <input name="t_pagina" type="hidden" id="t_pagina" value="${t_pagina}" />
+                            <input name="iduser" type="hidden" id="iduser" value="${iduser}" />
+                            <input name="idcorp" type="hidden" id="idcorp" value="${idcorp}" />   
+                        </div>
+                    </div>
+                </div>   
+                <div class="col-md-12" style="margin-top:20px; margin-left:170px">      
+                    <div class="row" >
+                        <div class="col-sm-2" ><label  id="lbl" style="background: ${cortop}; color: ${corletra}" class="label label-info" >SELECIONAR:</label> </div> 
+                        <div class="col-sm-10" ><select name="selectApresentacao" style="width: 50%; background: ${corcomp}; color: ${corletra} " class="btn btn-primary dropdown-toggle" id="selectApresentacao" onchange="Clik(1)">
+                                <option></option>
+                                <c:forEach var="item" items="${dados}">
+                                    <option value="${item.id}">${item.nome}</option>
+                                </c:forEach>
+                            </select></div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-sm-2" ><label  id="lbl" style="background: ${cortop}; color: ${corletra}" class="label label-info" >Registro:</label> </div> 
+                        <div class="col-sm-10" ><input name="registro" class="form-control" style="width: 50%" type="text" id="registro" value="0" size="10" readonly="readonly"/></div>
+                    </div> 
+                    <div class="row" >
+                        <div class="col-sm-2" ><label  id="lbl" style="background: ${cortop}; color: ${corletra}" class="label label-info" >Apresentação:</label> </div>                 
+                        <div class="col-sm-10" ><input name="nome" type="text" class="form-control" style="width: 50%"  id="nome" size="72" maxlength="10" /></div>                        
+                    </div>
+                </div>
+            </div>
+        </form>
+     
+    </body>
+</html>
+
+

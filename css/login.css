@@ -1,7 +1,7 @@
 body {
 	min-height: 100vh;
-	background-color: #CCC;
-	background-image: url('https://unsplash.it/g/1500/800?random');
+	
+	/*background-image: url('https://unsplash.it/g/1500/800?random');*/
 }
 
 .login-form {
